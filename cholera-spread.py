@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[1]:
-
 import math
 import numpy as np, pandas as pd, seaborn as sns
 from matplotlib import pyplot as plt
@@ -11,16 +6,12 @@ get_ipython().magic('matplotlib inline')
 import csv
 
 
-# In[6]:
-
 df = pd.read_csv('https://www.udel.edu/johnmack/frec682/cholera/pumps.txt')
 dt = pd.read_csv('https://www.udel.edu/johnmack/frec682/cholera/deaths.txt')
 
 df.plot(kind='scatter',x='X',y='Y', color='red',label='Pump locations')
 dt.plot(kind='scatter',x='X',y='Y',label='Death locations')
 
-
-# In[8]:
 
 def cholera():
     with open('deaths.csv', 'rt') as f:
@@ -57,9 +48,3 @@ def cholera():
     interact(deathcount,n=(1,60))
         
 cholera()
-
-
-# In[ ]:
-
-
-
