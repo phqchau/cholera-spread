@@ -1,3 +1,5 @@
+# Copyright 2016, Chau Pham
+
 import math
 import numpy as np, pandas as pd, seaborn as sns
 from matplotlib import pyplot as plt
